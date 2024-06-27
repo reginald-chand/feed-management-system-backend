@@ -28,9 +28,10 @@ export const followingFeedController = async (request, response) => {
       .findOne({ _id: userId });
 
     if (followingsCollection === null) {
-      return response
-        .status(500)
-        .json({ responseMessage: "Followings model could not be found." });
+      return response.status(404).json({
+        responseMessage:
+          "!OOPS. You are not following anyone. Please try following someone.",
+      });
     }
 
     if (!userId.equals(followingsCollection._id)) {
