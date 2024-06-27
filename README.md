@@ -59,4 +59,5 @@ It provides essential tools for managing content feeds efficiently, whether depl
 ## Copyright
 
 Copyright © 2024 Feed Management System - Reginald Chand
+
 Licensed under the GNU GPL 3.0 License. See [LICENSE](LICENSE) for more information.
